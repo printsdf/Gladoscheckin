@@ -46,7 +46,7 @@ jobs:
 
     - name: keep alive
       # uses: gautamkrishnar/keepalive-workflow@v1 # using the workflow with default settings
-        uses: liskin/gh-workflow-keepalive@v1
+      uses: liskin/gh-workflow-keepalive@v1
     - name: Delete workflow runs
       uses: Mattraks/delete-workflow-runs@v2
       with:
