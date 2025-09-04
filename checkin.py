@@ -50,6 +50,7 @@ if __name__ == '__main__':
 
                 # 获取账号当前状态
                 result = state.json()
+                print(result)
                 # 获取剩余时间
                 leftdays = int(float(result['data']['leftDays']))
                 # 获取账号email
@@ -95,3 +96,4 @@ if __name__ == '__main__':
     else:
         pushdeer = PushDeer(pushkey=sckey) 
         pushdeer.send_text(title, desp=context)
+
